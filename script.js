@@ -26,3 +26,19 @@ document.querySelectorAll('.contents-item').forEach((link) => {
     document.body.classList.remove('menu-open');
   });
 });
+
+document.querySelectorAll('.timeline-entry').forEach((entry) => {
+  const toggleEntry = () => {
+    const expanded = entry.getAttribute('aria-expanded') === 'true';
+    entry.setAttribute('aria-expanded', String(!expanded));
+    entry.classList.toggle('is-open', !expanded);
+  };
+
+  entry.addEventListener('click', toggleEntry);
+  entry.addEventListener('keydown', (event) => {
+    if (event.key === 'Enter' || event.key === ' ') {
+      event.preventDefault();
+      toggleEntry();
+    }
+  });
+});

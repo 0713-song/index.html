@@ -5,15 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="个人作品集" />
     <title>个人作品集</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <div class="cursor-glow" aria-hidden="true"></div>
     <header class="site-header">
-      <a class="brand" href="#cover" aria-label="返回封面">WORKS<span>.</span></a>
+      <a class="brand" href="#cover" aria-label="返回封面">●</a>
       <button class="menu-button" type="button" aria-label="打开目录" aria-expanded="false">
         <span></span><span></span>
       </button>
@@ -21,25 +18,37 @@
 
     <main>
       <section class="hero section" id="cover">
-        <p class="eyebrow reveal">PORTFOLIO / 2026</p>
-        <h1 class="hero-title reveal reveal-delay-1">个人<br /><em>作品集</em></h1>
-        <div class="hero-meta reveal reveal-delay-2">
-          <span>精选作品与经历</span>
-          <span class="scroll-note"><i></i> 向下浏览</span>
-        </div>
-        <div class="hero-shape" aria-hidden="true"><span>01</span></div>
+        <h1 class="hero-title reveal"><span>My</span> <span>Content</span> <em>Universe</em></h1>
+        <div class="hero-shape" aria-hidden="true"></div>
+        <nav class="hero-navigation" aria-label="作品板块导航">
+          <a href="#internship">实习经历</a>
+          <a href="#video">短视频作品</a>
+          <a href="#operations">运营成果</a>
+          <a href="#copywriting">文案 / 策划</a>
+        </nav>
       </section>
 
       <section class="intro section" id="about">
-        <div class="section-index">02 /</div>
-        <div class="intro-space" aria-label="个人简介预留区域"></div>
+        <div class="intro-dot-art" aria-hidden="true"></div>
+        <div class="intro-layout">
+          <div class="intro-copy">
+            <p>一个内心丰富、天马行空且有执行力的女孩。</p>
+          </div>
+          <div class="photo-wall" aria-label="个人照片墙">
+            <figure class="photo-tile photo-tile--portrait">
+              <img src="photo/照2.jpg" alt="" />
+            </figure>
+            <figure class="photo-tile photo-tile--cos">
+              <img src="photo/cos照片.jpg" alt="" />
+            </figure>
+            <figure class="photo-tile photo-tile--life">
+              <img src="photo/生活照1.jpg" alt="" />
+            </figure>
+          </div>
+        </div>
       </section>
 
       <section class="contents section" id="contents">
-        <div class="section-topline">
-          <div class="section-index">03 /</div>
-          <p class="eyebrow">CONTENTS</p>
-        </div>
         <nav class="contents-list" aria-label="作品目录">
           <a class="contents-item" href="#internship">
             <span class="item-number">01</span><span>实习经历</span><span class="arrow">↗</span>
@@ -56,20 +65,98 @@
         </nav>
       </section>
 
-      <section class="works section" id="works">
-        <div class="section-topline">
-          <div class="section-index">04 /</div>
-          <p class="eyebrow">SELECTED WORKS</p>
+      <section class="internship-page section" id="internship">
+        <div class="internship-heading">
+          <span class="section-index">01 /</span>
+          <h2>实习经历</h2>
         </div>
+        <div class="timeline">
+          <article class="timeline-entry" tabindex="0" aria-expanded="false">
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <div class="timeline-date">2026.07-2026.08</div>
+            <div class="timeline-main">
+              <h3>华侨城集团 <span>｜新媒体运营</span></h3>
+              <div class="timeline-details">
+                <p>矩阵账号运维：负责8个账号内容规划、脚本撰写与内容审核，把控账号内容调性，稳定更新节奏</p>
+                <p>小红书内容运营：独立策划图文/短视频脚本，挖掘热点产出多条高播放爆款内容；定期监控数据、复盘迭代内容方向，具备数据分析与复盘能力</p>
+                <p>合作方&amp;达人对接：协同外部合作方落地内容项目，产出10w+点赞短视频；承接活动宣发、直播配套内容策划，完成资源提报与小红书引流推广</p>
+                <p>活动执行：落地大型新媒体活动宣发，产出配套宣传物料，保障线上活动传播</p>
+              </div>
+            </div>
+          </article>
+          <article class="timeline-entry" tabindex="0" aria-expanded="false">
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <div class="timeline-date">2025.07-2025.09</div>
+            <div class="timeline-main">
+              <h3>台临文化传播有限公司 <span>｜宣传</span></h3>
+              <div class="timeline-details">
+                <p>项目对接执行：协助文旅活动落地，对接合作方统筹物料，完成多方沟通协调</p>
+                <p>短视频账号运营：独立完成拍摄剪辑，运营垂类短视频账号，产出流量内容；打磨图文素材，熟悉小红书种草笔记的优化逻辑</p>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="video-page section" id="video">
+        <div class="video-heading">
+          <span class="section-index">02 /</span>
+          <h2>短视频作品</h2>
+        </div>
+        <div class="video-grid">
+          <article class="video-card">
+            <div class="video-frame">
+              <video controls preload="metadata" playsinline>
+                <source src="works/达人段子.mp4" type="video/mp4" />
+              </video>
+            </div>
+            <div class="video-caption"><span>短视频类</span><strong>达人段子</strong></div>
+          </article>
+          <article class="video-card">
+            <div class="video-frame">
+              <video controls preload="metadata" playsinline>
+                <source src="works/达人职场段子.mp4" type="video/mp4" />
+              </video>
+            </div>
+            <div class="video-caption"><span>短视频类</span><strong>达人职场段子</strong></div>
+          </article>
+          <article class="video-card">
+            <div class="video-frame">
+              <video controls preload="metadata" playsinline>
+                <source src="works/二次元剪辑产出.mp4" type="video/mp4" />
+              </video>
+            </div>
+            <div class="video-caption"><span>剪辑类</span><strong>二次元剪辑产出</strong></div>
+          </article>
+          <article class="video-card">
+            <div class="video-frame">
+              <video controls preload="metadata" playsinline>
+                <source src="works/饭圈剪辑.mp4" type="video/mp4" />
+              </video>
+            </div>
+            <div class="video-caption"><span>剪辑类</span><strong>饭圈剪辑</strong></div>
+          </article>
+          <article class="video-card">
+            <div class="video-frame">
+              <video controls preload="metadata" playsinline>
+                <source src="works/科普新闻短视频.mp4" type="video/mp4" />
+              </video>
+            </div>
+            <div class="video-caption"><span>新闻科普类</span><strong>科普新闻短视频</strong></div>
+          </article>
+          <article class="video-card">
+            <div class="video-frame">
+              <video controls preload="metadata" playsinline>
+                <source src="works/校园编导微电影.mp4" type="video/mp4" />
+              </video>
+            </div>
+            <div class="video-caption"><span>微电影</span><strong>校园编导微电影</strong></div>
+          </article>
+        </div>
+      </section>
+
+      <section class="works section" id="works">
         <div class="work-grid">
-          <article class="work-card work-card--wide" id="internship">
-            <div class="placeholder placeholder--warm"><span>01</span></div>
-            <div class="card-caption"><span>实习经历</span><span>↗</span></div>
-          </article>
-          <article class="work-card" id="video">
-            <div class="placeholder placeholder--blue"><span>02</span></div>
-            <div class="card-caption"><span>短视频作品</span><span>↗</span></div>
-          </article>
           <article class="work-card" id="operations">
             <div class="placeholder placeholder--green"><span>03</span></div>
             <div class="card-caption"><span>运营成果</span><span>↗</span></div>
@@ -82,10 +169,6 @@
       </section>
 
       <section class="contact section" id="contact">
-        <div class="section-topline">
-          <div class="section-index">05 /</div>
-          <p class="eyebrow">CONTACT</p>
-        </div>
         <div class="contact-inner">
           <h2>联系方式</h2>
           <a class="email-link" href="mailto:">邮箱 <span>↗</span></a>
@@ -93,7 +176,7 @@
       </section>
     </main>
 
-    <footer class="site-footer"><span>WORKS.</span><span>个人作品集</span></footer>
+    <footer class="site-footer"><span>个人作品集</span></footer>
     <script src="script.js"></script>
   </body>
 </html>
